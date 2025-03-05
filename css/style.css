@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+    background-color: #684293;
+    height: 20%;
+    color: #e1e1e1;
+}
+
+header a {
+    text-decoration: none;
+    color: #e1e1e1;
+}
+
+body {
+    color: #684293;
+    background-color: #e1e1e1;
+}
+
+footer {
+    height: 10%;
+    background-color: #684293;
+    text-align: center;
+    color: #e1e1e1;
+}
