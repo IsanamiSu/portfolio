@@ -43,6 +43,27 @@ body h1 {
     margin-right: 2%;
 }
 
+#iut, #lycee {
+    margin : 2%;
+    display: inline-block;
+    width: 45%;
+}
+
+body img {
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #684293;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+body a:hover {
+    color: #684293;
+}
+
 header h1{
     color: #e1e1e1;
     border-bottom: none;
