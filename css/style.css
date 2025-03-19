@@ -59,6 +59,12 @@ body h1 {
     margin : 2%;
 }
 
+.competences {
+    margin : 2%;
+    display: inline-block;
+    width: 45%;
+}
+
 body img {
     height: 200px;
     border-radius: 10px;
@@ -67,6 +73,15 @@ body img {
 
 body img:hover {
     box-shadow: 5px 5px 5px #684293;
+}
+
+.competences img {
+    height: 20px;
+    box-shadow: none;
+}
+
+.competences img:hover {
+    box-shadow: none;
 }
 
 body a {
