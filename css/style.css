@@ -43,7 +43,7 @@ body h1 {
     margin-right: 2%;
 }
 
-#iut, #lycee {
+.formation {
     margin : 2%;
     display: inline-block;
     width: 45%;
@@ -53,6 +53,10 @@ body img {
     height: 200px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #684293;
+}
+
+body img:hover {
+    box-shadow: 5px 5px 5px #684293;
 }
 
 body a {
