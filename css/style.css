@@ -1,6 +1,6 @@
 /* =========================================================
    Portfolio — Marine De Jong
-   Palette : violet corporate + blanc
+   Palette : violet + blanc
    ========================================================= */
 
 :root {
@@ -525,6 +525,34 @@ img { max-width: 100%; display: block; }
     width: auto;
     box-shadow: none;
     border-radius: 0;
+}
+
+.card-media-icon {
+    background: var(--color-surface);
+}
+
+.card-media-icon-img {
+    height: 64px !important;
+    width: 64px !important;
+    object-fit: contain;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.card-link:hover {
+    color: var(--color-primary-dark);
+}
+
+.card-link .arrow {
+    color: var(--color-primary-light);
 }
 
 /* =========================================================
