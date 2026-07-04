@@ -1,4 +1,10 @@
+/* =========================================================
+   Portfolio — Marine De Jong
+   Palette : violet corporate + blanc
+   ========================================================= */
+
 :root {
+    /* Couleurs */
     --color-primary: #5B3A8E;
     --color-primary-dark: #3E2861;
     --color-primary-light: #9B7FC4;
@@ -8,9 +14,11 @@
     --color-muted: #6E6580;
     --color-border: #E4DEF3;
 
+    /* Typographie */
     --font-heading: 'Manrope', 'Segoe UI', sans-serif;
     --font-body: 'Inter', 'Segoe UI', sans-serif;
 
+    /* Rythme */
     --radius-s: 8px;
     --radius-m: 14px;
     --shadow-card: 0 4px 16px rgba(62, 40, 97, 0.08);
@@ -70,6 +78,10 @@ img { max-width: 100%; display: block; }
     margin: 0 auto;
     padding: 0 5%;
 }
+
+/* =========================================================
+   Header / Navigation
+   ========================================================= */
 
 .site-header {
     position: sticky;
@@ -189,6 +201,10 @@ img { max-width: 100%; display: block; }
 .nav-toggle-label span::before { position: absolute; top: -6px; }
 .nav-toggle-label span::after { position: absolute; top: 6px; }
 
+/* =========================================================
+   Footer
+   ========================================================= */
+
 .site-footer {
     background: var(--color-primary-dark);
     color: #E7DEF7;
@@ -200,6 +216,10 @@ img { max-width: 100%; display: block; }
 .site-footer p { color: #E7DEF7; }
 
 .site-footer a { color: #E7DEF7; text-decoration: underline; }
+
+/* =========================================================
+   Page header (bandeau titre de page)
+   ========================================================= */
 
 .page-heading {
     padding: 48px 0 24px;
@@ -216,6 +236,10 @@ img { max-width: 100%; display: block; }
     margin: 8px 0 0;
     font-size: 1.05rem;
 }
+
+/* =========================================================
+   Hero (page d'accueil)
+   ========================================================= */
 
 .hero {
     padding: 56px 0 20px;
@@ -298,6 +322,7 @@ img { max-width: 100%; display: block; }
     background: var(--color-surface);
 }
 
+/* Badge / carte d'identité stylisée */
 .id-card {
     background: linear-gradient(160deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     border-radius: var(--radius-m);
@@ -368,6 +393,7 @@ img { max-width: 100%; display: block; }
     margin: 3px;
 }
 
+/* Section "accès rapide" sur la home */
 .quick-links {
     padding: 40px 0 64px;
 }
@@ -411,6 +437,10 @@ img { max-width: 100%; display: block; }
     color: var(--color-primary-light);
     font-weight: 400;
 }
+
+/* =========================================================
+   Cartes génériques (projets, passions)
+   ========================================================= */
 
 .card-grid {
     display: grid;
@@ -497,6 +527,10 @@ img { max-width: 100%; display: block; }
     border-radius: 0;
 }
 
+/* =========================================================
+   Formation — timeline
+   ========================================================= */
+
 .timeline {
     position: relative;
     padding: 0 0 64px;
@@ -567,13 +601,69 @@ img { max-width: 100%; display: block; }
     font-size: 0.98rem;
 }
 
-.timeline-card img {
+.timeline-card > img {
     height: 140px;
     width: 100%;
     object-fit: cover;
     border-radius: var(--radius-s);
     box-shadow: none;
 }
+
+.timeline-card.no-media {
+    grid-template-columns: 1fr;
+}
+
+.timeline-card .card-tags {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.sub-projects {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sub-project {
+    border-top: 1px solid var(--color-border);
+    padding-top: 18px;
+}
+
+.sub-project h4 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-ink);
+    margin: 0 0 8px;
+}
+
+.company-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.company-heading h2 {
+    margin-bottom: 0;
+}
+
+.company-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.company-logo img {
+    height: 28px;
+    width: auto;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* =========================================================
+   Compétences
+   ========================================================= */
 
 .skills-grid {
     display: grid;
@@ -625,6 +715,10 @@ img { max-width: 100%; display: block; }
     box-shadow: none;
     border-radius: 0;
 }
+
+/* =========================================================
+   Contact
+   ========================================================= */
 
 .contact-section {
     padding-bottom: 80px;
@@ -679,6 +773,10 @@ img { max-width: 100%; display: block; }
 
 .contact-list a:hover { color: var(--color-primary); }
 
+/* =========================================================
+   Responsive
+   ========================================================= */
+
 @media (max-width: 860px) {
     .hero .container {
         grid-template-columns: 1fr;
@@ -699,7 +797,7 @@ img { max-width: 100%; display: block; }
         grid-template-columns: 1fr;
     }
 
-    .timeline-card img {
+    .timeline-card > img {
         order: -1;
         height: 160px;
     }
