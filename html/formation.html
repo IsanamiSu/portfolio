@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Formation</title>
-        <link href="../css/style.css" type="text/css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation — Marine De Jong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
 
-    <header>
-        <h2><a href="../index.html">Marine De Jong</a></h2>
-        <h1>Portofolio</h1>
-        <nav>
-            <a href="formation.html">Formation</a>
-            <a href="projet.html">Projets</a>
-            <a href="competences.html">Compétences</a>
-            <a href="passions.html">Passions</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">MDJ</span>
+                <span class="brand-name">Marine De Jong</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span></label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="formation.html" class="active">Formation</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <h1>Formation</h1>
+    <main>
+        <div class="container">
+            <div class="page-heading">
+                <h1>Formation</h1>
+                <p>Mon parcours scolaire et académique</p>
+            </div>
 
-        <div class="formation">
-            <h2>Lycée</h2>
-            <h3><Strong>Baccalauréat général</Strong> Mathématiques, Numérique et Sciences de l'Informatique
-                <br>Option : Mathémaitques expertes
-            </h3>
-            <p>2018 - 2021</p>
-            <p><a href="https://lyc-villaroy-guyancourt.ac-versailles.fr/" target="_blank">Lycée de Villaroy</a>, Guyancourt, 78280</p>
-            <img src="../photo/lyceeVillaroy.jpg" alt="Photo du lycée de Villaroy">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-card">
+                        <div>
+                            <span class="timeline-period">2018 - 2021</span>
+                            <h2>Lycée</h2>
+                            <h3>Baccalauréat général Mathématiques, Numérique et Sciences de l'Informatique<br>Option : Mathémaitques expertes</h3>
+                            <p><a href="https://lyc-villaroy-guyancourt.ac-versailles.fr/" target="_blank">Lycée de Villaroy</a>, Guyancourt, 78280</p>
+                        </div>
+                        <img src="../photo/lyceeVillaroy.jpg" alt="Photo du lycée de Villaroy">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-card">
+                        <div>
+                            <span class="timeline-period">2023 - 2026</span>
+                            <h2>IUT</h2>
+                            <h3>BUT Informatique Parcours réalisation d’applications - conception, développement, validation</h3>
+                            <p><a href="https://www.iut-velizy-rambouillet.uvsq.fr/" target="_blank">IUT de Vélizy</a> - Université Versailles Saint Quentin en Yvelines, Vélizy, 78640</p>
+                        </div>
+                        <img src="../photo/iutVelizy.jpg" alt="Photo de l'IUT de Vélizy">
+                    </div>
+                </div>
+            </div>
         </div>
+    </main>
 
-        <div class="formation">
-            <h2>IUT</h2>
-            <h3><Strong>BUT Informatique</Strong> Parcours réalisation d’applications - conception, développement, validation</h3>
-            <p>2023 - 2026</p>
-            <p><a href="https://www.iut-velizy-rambouillet.uvsq.fr/" target="_blank">IUT de Vélizy</a> - Université Versailles Saint Quentin en Yvelines, Vélizy, 78640</p>
-            <img src="../photo/iutVelizy.jpg" alt="Photo de l'IUT de Vélizy">
-        </div>
-
-    </body>
-
-    <footer>
+    <footer class="site-footer">
         <p>© 2025 Marine De Jong</p>
     </footer>
+</body>
 </html>

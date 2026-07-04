@@ -1,58 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Projet</title>
-        <link href="../css/style.css" type="text/css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Marine De Jong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
 
-    <header>
-        <h2><a href="../index.html">Marine De Jong</a></h2>
-        <h1>Portofolio</h1>
-        <nav>
-            <a href="formation.html">Formation</a>
-            <a href="projet.html">Projets</a>
-            <a href="competences.html">Compétences</a>
-            <a href="passions.html">Passions</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">MDJ</span>
+                <span class="brand-name">Marine De Jong</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span></label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="projet.html" class="active">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <h1>Projets</h1>
+    <main>
+        <div class="container">
+            <div class="page-heading">
+                <h1>Projets</h1>
+                <p>Quelques réalisations menées durant mon BUT Informatique</p>
+            </div>
 
-        <div class="projet">
-            <h2>Module Mathor</h2>
-            <p>
-                Au cours de la seconde année de <strong>BUT</strong> nous devons réaliser un projet web en équipe.
-                Ce projet doit rassembler différents <strong>Modules mathématiques</strong>. Nottamment un module de
-                <strong>probabilité</strong> ou encore un module de <strong>chiffrement</strong>.
-                <br>
-                Ce projet est fait en <strong>PHP</strong>, est sur mis en ligne sur un <Strong>serveur local</Strong>
-                et utilise une <strong>base de données</strong>.
-            </p>
-            <video controls>
-                <source src="../video/projetSae2emeAnnee.mp4" type="video/mp4">
-            </video>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-media">
+                        <video controls>
+                            <source src="../video/projetSae2emeAnnee.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body">
+                        <h2>Module Mathor</h2>
+                        <p>
+                            Au cours de la seconde année de <strong>BUT</strong> nous devons réaliser un projet web en équipe.
+                            Ce projet doit rassembler différents <strong>Modules mathématiques</strong>. Nottamment un module de
+                            <strong>probabilité</strong> ou encore un module de <strong>chiffrement</strong>.
+                            <br>
+                            Ce projet est fait en <strong>PHP</strong>, est sur mis en ligne sur un <strong>serveur local</strong>
+                            et utilise une <strong>base de données</strong>.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag"><img src="../photo/php.png" alt="PHP">PHP</span>
+                            <span class="tag"><img src="../photo/mysql.png" alt="Base de données">Base de données</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-media">
+                        <img src="../photo/ESNW.webp" alt="capture d'écran de l'ESNW" />
+                    </div>
+                    <div class="card-body">
+                        <h2>ENS War</h2>
+                        <p>
+                            Ce projet réalisé en binome au cours de la première année de <strong>BUT</strong> permet de jouer
+                            jusqu'à 4 joueurs, si il y a moins de joueurs, des <strong>ordis</strong> complètent la partie.
+                            <br>
+                            Ce jeu codé en <strong>Phyton</strong> demande aux joueurs de se déplacer pour aller réaliser des
+                            <strong>tâches</strong>. Ces tâches permettent de gagner des <strong>Points</strong> qui permettent
+                            d'augmenter ses <strong>compétences</strong>. Le joueur ayant le plus de points à la fin de la partie
+                            à gagné.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag"><img src="../photo/python.png" alt="Python">Python</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
+    </main>
 
-        <div class="projet">
-            <h2>ENS War</h2>
-            <p>
-                Ce projet réalisé en binome au cours de la première année de <strong>BUT</strong> permet de jouer
-                jusqu'à 4 joueurs, si il y a moins de joueurs, des <strong>ordis</strong> complètent la partie.
-                <br>
-                Ce jeu codé en <Strong>Phyton</Strong> demande aux joueurs de se déplacer pour aller réaliser des
-                <strong>tâches</strong>. Ces tâches permettent de gagner des <strong>Points</strong> qui permettent
-                d'augmenter ses <strong>compétences</strong>. Le joueur ayant le plus de points à la fin de la partie
-                à gagné.
-            </p>
-            <img src="../photo/ESNW.webp" alt="capture d'écran de l'ESNW" />
-        </div>
-
-    </body>
-
-    <footer>
+    <footer class="site-footer">
         <p>© 2025 Marine De Jong</p>
     </footer>
+</body>
 </html>
