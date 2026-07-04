@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Passions</title>
-        <link href="../css/style.css" type="text/css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passions — Marine De Jong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
 
-    <header>
-        <h2><a href="../index.html">Marine De Jong</a></h2>
-        <h1>Portofolio</h1>
-        <nav>
-            <a href="formation.html">Formation</a>
-            <a href="projet.html">Projets</a>
-            <a href="competences.html">Compétences</a>
-            <a href="passions.html">Passions</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">MDJ</span>
+                <span class="brand-name">Marine De Jong</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span></label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="experiences.html">Expériences</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="passions.html" class="active">Passions</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <h1>Passions</h1>
+    <main>
+        <div class="container">
+            <div class="page-heading">
+                <h1>Passions</h1>
+            </div>
 
-        <div class="passion">
-            <h2>Jeux Vidéos</h2>
-            <p>Les jeux vidéos, et plus spécifiquement les jeux d'aventure m'ont toujours fasciné.
-                Ils offrent l'opportunité de s'évader dans des mondes inconnus, où chaque quête peut être une épopée.
-                Explorer des lieux mytérieux, résoudre des énigmes ou encore parcourir des donjons est captivant.
-                Ces jeux permettent une véritable évasion où tout est possible.
-            </p>
-            <img src="../photo/zelda.jpg" alt="Capture d'écran d'un jeu vidéo">
+            <div class="card-grid cols-3">
+                <article class="card">
+                    <div class="card-media">
+                        <img src="../photo/zelda.jpg" alt="Capture d'écran d'un jeu vidéo">
+                    </div>
+                    <div class="card-body">
+                        <h2>Jeux Vidéos</h2>
+                        <p>Les jeux vidéos, et plus spécifiquement les jeux d'aventure m'ont toujours fasciné.
+                            Ils offrent l'opportunité de s'évader dans des mondes inconnus, où chaque quête peut être une épopée.
+                            Explorer des lieux mytérieux, résoudre des énigmes ou encore parcourir des donjons est captivant.
+                            Ces jeux permettent une véritable évasion où tout est possible.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-media">
+                        <img src="../photo/terreDuMilieu.jpg" alt="Carte de la Terre Du Milieu, Le Seigneur Des Anneaux">
+                    </div>
+                    <div class="card-body">
+                        <h2>Lecture</h2>
+                        <p>Tout comme les jeux vidéos, les romans offrent également de nombreuses possibilités d'évasions.
+                            J'apprécie tout particulièrement les romans de fantasy, où l'on peut retrouver de la magie. En effet,
+                            ces mondes magiques, bien souvent peuplés d'être en tout genre, permettent d'imaginer une infinité
+                            de possibilité.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-media">
+                        <img src="../photo/concert01.jpg" alt="Photo de concert - Ateez à Lyon le 18 janvier 2025">
+                    </div>
+                    <div class="card-body">
+                        <h2>Musique</h2>
+                        <p>
+                            Ecouter de la musique a toujours été pour moi une source de plaisir et d'évasion.
+                            Elle me permet de pouvoir me déconnecter des différentes sources de distractions extérieurs
+                            comme le bruit des conversations ou encore la polution sonore en ville. Cette passion qui a commencer
+                            par un simple écoute sur les plateformes de streaming s'est transformé, et à présent je collectionne
+                            également des albums et je vais à des concerts d'artistes ou de groupe qui me plaisent.
+                        </p>
+                    </div>
+                </article>
+            </div>
         </div>
+    </main>
 
-        <div class="passion">
-            <h2>Lecture</h2>
-            <p>Tout comme les jeux vidéos, les romans offrent également de nombreuses possibilités d'évasions.
-                J'apprécie tout particulièrement les romans de fantasy, où l'on peut retrouver de la magie. En effet,
-                ces mondes magiques, bien souvent peuplés d'être en tout genre, permettent d'imaginer une infinité
-                de possibilité.
-            </p>
-            <img src="../photo/terreDuMilieu.jpg" alt="Carte de la Terre Du Milieu, Le Seigneur Des Anneaux">
-        </div>
-
-        <div class="passion">
-            <h2>Musique</h2>
-            <p>
-                Ecouter de la musique a toujours été pour moi une source de plaisir et d'évasion.
-                Elle me permet de pouvoir me déconnecter des différentes sources de distractions extérieurs
-                comme le bruit des conversations ou encore la polution sonore en ville. Cette passion qui a commencer
-                par un simple écoute sur les plateformes de streaming s'est transformé, et à présent je collectionne
-                également des albums et je vais à des concerts d'artistes ou de groupe qui me plaisent.
-            </p>
-            <img src="../photo/concert01.jpg" alt="Photo de concert - Ateez à Lyon le 18 janvier 2025">
-        </div>
-    </body>
-
-    <footer>
+    <footer class="site-footer">
         <p>© 2025 Marine De Jong</p>
     </footer>
+</body>
 </html>

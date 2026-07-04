@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Accueil</title>
-        <link href="css/style.css" type="text/css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine De Jong — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
 
-    <header>
-        <h2><a href="index.html">Marine De Jong</a></h2>
-        <h1>Portofolio</h1>
-        <nav>
-            <a href="html/formation.html">Formation</a>
-            <a href="html/projet.html">Projets</a>
-            <a href="html/competences.html">Compétences</a>
-            <a href="html/passions.html">Passions</a>
-            <a href="html/contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">MDJ</span>
+                <span class="brand-name">Marine De Jong</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span></label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="html/formation.html">Formation</a></li>
+                    <li><a href="html/experiences.html">Expériences</a></li>
+                    <li><a href="html/projet.html">Projets</a></li>
+                    <li><a href="html/competences.html">Compétences</a></li>
+                    <li><a href="html/passions.html">Passions</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <div class="home">
-            <h2>A propos</h2>
-            <p>Je suis <strong>Marine De Jong</strong>, j'ai 22 ans et je suis actuellement étudiante en
-                <strong>BUT Informatique</strong>. Je suis passionée par l'Informatique depuis de nombreuses années.</p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <span class="hero-eyebrow">Portfolio</span>
+                    <h1>A propos</h1>
+                    <p class="lead">Je suis <strong>Marine De Jong</strong>, j'ai 23 ans et je suis actuellement étudiante en
+                        <strong>BUT Informatique</strong>. Je suis passionée par l'Informatique depuis de nombreuses années.</p>
 
-            <a href="pdf/CV%20Marine%20De%20Jong.pdf" title="Pdf">Vous pouvez retrouver mon cv ici !</a>
-        </div>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="pdf/CV_Marine_De_Jong.pdf" title="Pdf">Vous pouvez retrouver mon cv ici !</a>
+                        <a class="btn btn-secondary" href="html/contact.html">Me contacter</a>
+                    </div>
+                </div>
 
-    </body>
+                <div class="id-card">
+                    <div class="id-card-inner">
+                        <div class="id-card-monogram">MDJ</div>
+                        <div class="id-card-name">Marine De Jong</div>
+                        <div class="id-card-role">Étudiante BUT Informatique</div>
+                        <div class="id-card-divider"></div>
+                        <span class="id-card-tag">Développement</span>
+                        <span class="id-card-tag">Bases de données</span>
+                        <span class="id-card-tag">Web</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
+        <section class="quick-links">
+            <div class="container">
+                <h2>Explorer le portfolio</h2>
+                <div class="quick-links-grid">
+                    <a class="quick-link-card" href="html/formation.html">Formation <span class="arrow">→</span></a>
+                    <a class="quick-link-card" href="html/experiences.html">Expériences <span class="arrow">→</span></a>
+                    <a class="quick-link-card" href="html/projet.html">Projets <span class="arrow">→</span></a>
+                    <a class="quick-link-card" href="html/competences.html">Compétences <span class="arrow">→</span></a>
+                    <a class="quick-link-card" href="html/passions.html">Passions <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
         <p>© 2025 Marine De Jong</p>
     </footer>
+</body>
 </html>

@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-      <meta charset="UTF-8">
-      <title>Contact</title>
-        <link href="../css/style.css" type="text/css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Marine De Jong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
 
-    <header>
-        <h2><a href="../index.html">Marine De Jong</a></h2>
-        <h1>Portofolio</h1>
-        <nav>
-            <a href="formation.html">Formation</a>
-            <a href="projet.html">Projets</a>
-            <a href="competences.html">Compétences</a>
-            <a href="passions.html">Passions</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">MDJ</span>
+                <span class="brand-name">Marine De Jong</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span></label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="experiences.html">Expériences</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <h1>Contact</h1>
-        <div class="contact">
-            <p>Vous pouvez me contacter via:</p>
-            <ul>
-                <li>LinkedIn : <a href="https://www.linkedin.com/in/marine-de-jong" target="_blank">mon profil</a></li>
-                <li>Mail : <a href="mailto:marine.mdj54@gmail.com">marine.mdj54@gmail.com</a></li>
-            </ul>
+    <main>
+        <div class="container">
+            <div class="page-heading">
+                <h1>Contact</h1>
+            </div>
+
+            <div class="contact-section">
+                <div class="contact-card">
+                    <p>Vous pouvez me contacter via :</p>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-label">Mail</span>
+                            <a href="mailto:marine.mdj54@gmail.com">marine.mdj54@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </main>
 
-    </body>
-
-    <footer>
+    <footer class="site-footer">
         <p>© 2025 Marine De Jong</p>
     </footer>
+</body>
 </html>

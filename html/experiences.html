@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expérience professionnelle — Marine De Jong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">MDJ</span>
+                <span class="brand-name">Marine De Jong</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span></label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="experiences.html" class="active">Expériences</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="page-heading">
+                <h1>Expérience professionnelle</h1>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-card no-media">
+                        <div>
+                            <span class="timeline-period">Avril 2025 - Juillet 2025</span>
+                            <div class="company-heading">
+                                <h2>Stage — Crédit Agricole CIB</h2>
+                                <a class="company-logo" href="https://www.ca-cib.fr" target="_blank" title="Crédit Agricole CIB">
+                                    <img src="../photo/cacib.jpg" alt="Logo Crédit Agricole CIB">
+                                </a>
+                            </div>
+                            <h3>Refonte d'une application de suivi de confirmation de trades</h3>
+                            <p>Stage réalisé au sein du <strong>Crédit Agricole Corporate and Investment Bank (CACIB)</strong>,
+                                au cours de la 2ème année de <strong>BUT Informatique</strong>, au sein d'une équipe en charge
+                                d'applications internes back-office. Le projet portait sur la refonte d'une application de suivi
+                                de confirmation de trades, utilisée pour fiabiliser le suivi des confirmations avant règlement.</p>
+                            <p>Je me suis occupée de la partie récupération des confirmations ainsi que de
+                                leur enregistrement, avec les données associées, en base de données, dans le
+                                respect de l'architecture hexagonale mise en place sur le projet, garantissant
+                                une séparation claire entre la logique métier et les aspects techniques (persistance, messagerie).</p>
+                            <div class="card-tags">
+                                <span class="tag"><img src="../photo/java.png" alt="Java">Java</span>
+                                <span class="tag"><img src="../photo/springboot.png" alt="Spring Boot">Spring Boot</span>
+                                <span class="tag"><img src="../photo/mongodb.jpg" alt="MongoDB">MongoDB</span>
+                                <span class="tag"><img src="../photo/rabbitmq.png" alt="RabbitMQ">RabbitMQ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-card no-media">
+                        <div>
+                            <span class="timeline-period">Septembre 2025 - Septembre 2026</span>
+                            <div class="company-heading">
+                                <h2>Alternance — Crédit Agricole CIB</h2>
+                                <a class="company-logo" href="https://www.ca-cib.fr" target="_blank" title="Crédit Agricole CIB">
+                                    <img src="../photo/cacib.jpg" alt="Logo Crédit Agricole CIB">
+                                </a>
+                            </div>
+                            <h3>Année d'alternance réalisée en 3ème année de BUT Informatique</h3>
+                            <p>Cette alternance d'un an s'est déroulée au sein de la même entité que mon stage, toujours sur
+                                des <strong>applications internes back-office</strong>. Elle s'est articulée autour de deux
+                                grands projets.</p>
+
+                            <div class="sub-projects">
+                                <div class="sub-project">
+                                    <h4>Module de traitement de documents</h4>
+                                    <p>Création, en appliquant la méthode Agile, d'un module de traitement de documents.
+                                        Je me suis occupée de la partie gestion des mots de passe : conception
+                                        du stockage en base de données, développement du back, affichage dans l'interface web sous
+                                        forme de tableau, et utilisation de ces mots de passe pour déverrouiller des PDF protégés.</p>
+                                    <div class="card-tags">
+                                        <span class="tag"><img src="../photo/java.png" alt="Java">Java</span>
+                                        <span class="tag"><img src="../photo/angular.png" alt="Angular">Angular</span>
+                                        <span class="tag"><img src="../photo/springboot.png" alt="Spring Boot">Spring Boot</span>
+                                        <span class="tag"><img src="../photo/postgresql.png" alt="PostgreSQL">PostgreSQL</span>
+                                    </div>
+                                </div>
+
+                                <div class="sub-project">
+                                    <h4>Refonte de l'application de gestion des réclamations et suspens des règlements</h4>
+                                    <p>Refonte du front de cette application, avec le passage de 4 interfaces en
+                                        Vue.js à une interface unique en Angular, dans un objectif
+                                        d'harmonisation et de simplification de la maintenance.</p>
+                                    <div class="card-tags">
+                                        <span class="tag"><img src="../photo/angular.png" alt="Angular">Angular</span>
+                                        <span class="tag"><img src="../photo/vuejs.png" alt="Vue.js">Vue.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Marine De Jong</p>
+    </footer>
+</body>
+</html>

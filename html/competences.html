@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Competences</title>
-        <link href="../css/style.css" type="text/css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences — Marine De Jong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
 
-    <header>
-        <h2><a href="../index.html">Marine De Jong</a></h2>
-        <h1>Portofolio</h1>
-        <nav>
-            <a href="formation.html">Formation</a>
-            <a href="projet.html">Projets</a>
-            <a href="competences.html">Compétences</a>
-            <a href="passions.html">Passions</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">MDJ</span>
+                <span class="brand-name">Marine De Jong</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span></label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="experiences.html">Expériences</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="competences.html" class="active">Compétences</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <h1>Compétences</h1>
+    <main>
+        <div class="container">
+            <div class="page-heading">
+                <h1>Compétences</h1>
+            </div>
 
-        <div class="competences">
-            <h2>Programmation Web</h2>
-            <ul>
-                <li>HTML <img class="logo" src="../photo/html.png" alt="logo html"></li>
-                <li>CSS <img class="logo" src="../photo/css.png" alt="logo css"></li>
-                <li>PHP <img class="logo" src="../photo/php.png" alt="logo php"></li>
-                <li>JavaScript <img class="logo" src="../photo/javascript.png" alt="logo javascript"></li>
-            </ul>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h2>Programmation Web</h2>
+                    <ul class="skill-list">
+                        <li><img src="../photo/html.png" alt="logo html">HTML</li>
+                        <li><img src="../photo/css.png" alt="logo css">CSS</li>
+                        <li><img src="../photo/php.png" alt="logo php">PHP</li>
+                        <li><img src="../photo/javascript.png" alt="logo javascript">JavaScript</li>
+                        <li><img src="../photo/angular.png" alt="logo angular">Angular</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h2>Programmation</h2>
+                    <ul class="skill-list">
+                        <li><img src="../photo/java.png" alt="logo java">JAVA</li>
+                        <li><img src="../photo/c.png" alt="logo c">C</li>
+                        <li><img src="../photo/python.png" alt="logo python">Python</li>
+                        <li><img src="../photo/android.png" alt="logo android">Android</li>
+                        <li><img src="../photo/springboot.png" alt="logo spring boot">Spring Boot</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h2>Base de Données</h2>
+                    <ul class="skill-list">
+                        <li><img src="../photo/mysql.png" alt="logo MySQL">MySQL</li>
+                        <li><img src="../photo/postgresql.png" alt="logo PostgreSQL">PostgreSQL</li>
+                        <li><img src="../photo/mongodb.jpg" alt="logo MongoDB">MongoDB</li>
+                        <li><img src="../photo/sql.png" alt="logo SQL">SQL</li>
+                        <li><img src="../photo/plsql.png" alt="logo PL/SQL">PL/SQL</li>
+                        <li><img src="../photo/nosql.png" alt="logo NoSQL">NoSQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h2>Système d'exploitation</h2>
+                    <ul class="skill-list">
+                        <li><img src="../photo/windows.png" alt="logo Windows">Windows</li>
+                        <li><img src="../photo/lnux.png" alt="logo Linux">Linux (Debian, CentOS)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h2>Anglais</h2>
+                    <ul class="skill-list">
+                        <li><img src="../photo/toeic.jpg" alt="logo TOEIC">TOEIC : 885 points</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </main>
 
-        <div class="competences">
-            <h2>Programmation</h2>
-            <ul>
-                <li>JAVA <img class="logo" src="../photo/java.png" alt="logo java"></li>
-                <li>C <img class="logo" src="../photo/c.png" alt="logo c"></li>
-                <li>Python <img class="logo" src="../photo/python.png" alt="logo python"></li>
-                <li>Android <img class="logo" src="../photo/android.png" alt="logo android"></li>
-            </ul>
-        </div>
-
-        <div class="competences">
-            <h2>Base de Données</h2>
-            <ul>
-                <li>MySQL <img class="logo" src="../photo/mysql.png" alt="logo MySQL"></li>
-                <li>MariaDB <img class="logo" src="../photo/mariadb.png" alt="logo MariaDB"></li>
-                <li>SQL <img class="logo" src="../photo/sql.png" alt="logo SQL"></li>
-                <li>PL/SQL <img class="logo" src="../photo/plsql.png" alt="logo PL/SQL"></li>
-            </ul>
-        </div>
-
-        <div class="competences">
-            <h2>Système d'exploitation</h2>
-            <ul>
-                <li>Windows <img class="logo" src="../photo/windows.png" alt="logo Windows"></li>
-                <li>Linux (Debian, CentOS) <img class="logo" src="../photo/lnux.png" alt="logo Linux"></li>
-            </ul>
-        </div>
-
-    </body>
-
-    <footer>
+    <footer class="site-footer">
         <p>© 2025 Marine De Jong</p>
     </footer>
+</body>
 </html>
